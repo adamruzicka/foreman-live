@@ -1,4 +1,4 @@
-%packages --excludedocs --nobase
+%packages --excludedocs
 
 # Debugging support
 file
@@ -18,32 +18,32 @@ binutils
 
 # Foreman packages
 foreman
-ruby193-rubygem-foreman_discovery
-ruby193-rubygem-foreman_bootdisk
-ruby193-rubygem-foreman_setup
+# ruby193-rubygem-foreman_discovery
+# ruby193-rubygem-foreman_bootdisk
+# ruby193-rubygem-foreman_setup
 foreman-installer
 
 # Foreman dependencies
 bind
 bind-utils
 dhcp
-foreman-postgresql
-foreman-proxy
-foreman-selinux
+# foreman-postgresql
+# foreman-proxy
+# foreman-selinux
 httpd
-mod_passenger
+# mod_passenger
 mod_ssl
 postgresql-server
-puppet
-puppet-server
-foreman-release-scl
-foreman-cli
+# puppet
+# puppet-server
+# foreman-release-scl
+# centos-release-scl-rh
+# foreman-cli
 facter
-ruby193-rubygem-passenger-native
-rubygem-passenger-native
-tftp-server
+# rubygem-passenger-native
+# tftp-server
 wget
-xinetd
+# xinetd
 
 # Unnecessary desktop dependencies
 -abattis-cantarell-fonts
@@ -70,10 +70,10 @@ xinetd
 -wqy-microhei-fonts
 
 # selinux toolchain of policycoreutils, libsemanage, ustr
--policycoreutils
--checkpolicy
--selinux-policy*
--libselinux-python
--libselinux
+policycoreutils
+checkpolicy
+selinux-policy*
+libselinux-python
+libselinux
 
 %end
